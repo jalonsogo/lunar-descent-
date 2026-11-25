@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Lunar Descent</title></head>
+<body>
+<main id="scene" aria-label="Three-dimensional lunar landing simulation"></main>
+<header><div class="identity"><span class="mark">◈</span><div><strong>LUNAR DESCENT</strong><small>FLIGHT SIMULATOR / 01</small></div></div><button id="sound" aria-pressed="true">SOUND ON</button></header>
+<section class="telemetry" aria-label="Flight telemetry"><div class="section-title"><i></i> FLIGHT TELEMETRY</div><div class="readings"><div>ALTITUDE<strong id="alt"></strong><small>M</small></div><div>VERTICAL<strong id="vy"></strong><small>M/S</small></div><div>LATERAL<strong id="vx"></strong><small>M/S</small></div><div>ATTITUDE<strong id="tilt"></strong><small>DEG</small></div></div><div class="fuel">PROPELLANT <span id="fuel"></span><div class="track"><div id="bar"></div></div></div></section>
+<section id="brief" class="brief"><div class="section-title">MISSION 01 / MARE TRANQUILLITATIS</div><h1>First descent</h1><p id="report">Guide the lander onto the illuminated pad. Touch down below 2 m/s vertically, 1 m/s laterally, and within 10° of upright.</p><button id="start">BEGIN DESCENT <span>↗</span></button></section>
+<div class="target"><i></i><span id="state">AWAITING DESCENT</span></div>
+<footer><div class="controls"><button data-key="ArrowLeft" aria-label="Tilt left"><kbd>←</kbd> LEFT</button><button data-key="ArrowUp" aria-label="Fire engine"><kbd>↑</kbd> THRUST</button><button data-key="ArrowRight" aria-label="Tilt right"><kbd>→</kbd> RIGHT</button></div><button id="reset"><kbd>R</kbd> RESET</button></footer>
+<script type="module" src="/src.js"></script></body></html>
